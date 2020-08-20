@@ -30,6 +30,7 @@ app.use(middleware.requestLogger)
 app.use('/api/blogs', blogsRouter)
 app.use('/api/users', usersRouter)
 app.use('/api/login', loginRouter)
+app.use(express.static('build'))
 if (process.env.NODE_ENV === 'e2eTest') {
   const testingRouter = require('./controllers/testing')
   app.use('/api/testing', testingRouter)
