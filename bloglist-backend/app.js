@@ -1,4 +1,5 @@
 const express = require('express')
+const path = require('path')
 const app = express()
 const bodyParser = require('body-parser')
 const cors = require('cors')
@@ -30,12 +31,17 @@ app.use(middleware.requestLogger)
 app.use('/api/blogs', blogsRouter)
 app.use('/api/users', usersRouter)
 app.use('/api/login', loginRouter)
-app.use(express.static('build'))
+//app.use(express.static('build'))
+app.use(express.static(path.join(__dirname, 'build')))
 if (process.env.NODE_ENV === 'e2eTest') {
   const testingRouter = require('./controllers/testing')
   app.use('/api/testing', testingRouter)
 }
 app.use(middleware.unknownEndpoint)
 app.use(middleware.errorHandler)
+
+app.get('/*', function(req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'))
+})
 
 module.exports = app
