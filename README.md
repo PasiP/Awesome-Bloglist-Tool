@@ -1,5 +1,5 @@
 # Awesome-Bloglist-Tool
-Useful tool to create and manage blog lists
+Useful tool to create and manage blog lists. This application was done as an excercise for The course -["Deep Dive Into Modern Web Development"](https://fullstackopen.com/en). Application uses React frontend and node backend.
 
-React frontend and node backend for blogging enthusiasts.
+Technologies used: React / Node / Express / MongoDB / Redux / JavaScript
 DEMO: [Awesome-Bloglist-Tool](https://awesome-bloglist-tool.herokuapp.com/)
