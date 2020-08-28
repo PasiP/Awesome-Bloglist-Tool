@@ -3,5 +3,5 @@ Useful tool to create and manage blog lists. This application was done as an exc
 
 Technologies used: React / Node / Express / MongoDB / Redux / JavaScript
 
-DEMO: [Awesome-Bloglist-Tool](https://awesome-bloglist-tool.herokuapp.com/)
+DEMO: [Awesome-Bloglist-Tool](https://awesome-bloglist-tool.herokuapp.com/) 
 admin / admin
