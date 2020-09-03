@@ -1,3 +1,5 @@
+![Awesome Bloglist Tool](https://github.com/PasiP/Awesome-Bloglist-Tool/blob/master/Header-picture.PNG)
+
 # Awesome-Bloglist-Tool
 Useful tool to create and manage blog lists. This application was done as an excercise for the course ["Deep Dive Into Modern Web Development"](https://fullstackopen.com/en). Application uses React frontend and node backend.
 
